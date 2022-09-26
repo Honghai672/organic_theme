@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="button.css" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.png" alt="" />rganic</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  BestSeller
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav navbar-iconlist ml-auto">
+              <li class="nav-item">
+                <a href="" class="nav-link"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fa-solid fa-circle-user"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fa-solid fa-heart"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">0.00$</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- //end header -->
+
+    <div class="banner">
+      <div class="container-fluid">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/bg-3.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="row justify-content-between">
+                  <div class="col-6">
+                    <div class="carousel-left">
+                      <p>sweet peppers</p>
+                      <h5>Orange Drink</h5>
+                      <h5>Natural 100%</h5>
+                      <p>A blend of freshly green sweet orange</p>
+                      <div class="banner-button">
+                        <button class="btn-banner">
+                          <a href="#">Shop Now </a>
+                        </button>
+                        <button class="btn-banner">
+                          <a href="">View LookBook </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bg-1.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="carousel-left">
+                      <p>sweet peppers</p>
+                      <h5>Orange Drink</h5>
+                      <h5>Natural 100%</h5>
+                      <p>A blend of freshly green sweet orange</p>
+                      <div class="banner-button">
+                        <button class="btn-banner">
+                          <a href="#">Shop Now </a>
+                        </button>
+                        <button class="btn-banner">
+                          <a href="#">View LookBook </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bg.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="carousel-left">
+                      <p>sweet peppers</p>
+                      <h5>Orange Drink</h5>
+                      <h5>Natural 100%</h5>
+                      <p>A blend of freshly green sweet orange</p>
+                      <div class="banner-button">
+                        <button class="btn-banner">
+                          <a href="#">Shop Now </a>
+                        </button>
+                        <button class="btn-banner">
+                          <a href="#">View LookBook </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="carousel-right">
+                      <img src="images/drink-img.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev left"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next right"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="feature">
+      <div class="container">
+        <div class="row">
+          <div class="title-section today-product text-center">
+            <h3>Today</h3>
+            <div class="arrow"></div>
+            <h2>Menu</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="star-wrapper">
+            <div class="col-md-2 col-xs-12 d-flex justify-content-center">
+              <div class="star-item">
+                <span></span>
+                <p>Fresh Fruit</p>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-xs-12 d-flex justify-content-center">
+              <div class="star-item">
+                <span></span>
+                <p>Fast Fruit</p>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-xs-12 d-flex justify-content-center">
+              <div class="star-item">
+                <span></span>
+                <p>Dried Fruit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image-wrapper d-flex">
+            <div class="col-md-4">
+              <div class="slider-item">
+                <div class="slider-status">
+                  <span class="status">New</span>
+                </div>
+                <div class="slider-img">
+                  <img src="images/pd-1.png" alt="" />
+                </div>
+
+                <div class="slider-info">
+                  <p>Organic</p>
+                  <h3><a href="#">Fresh Fruit and vegetable for month</a></h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Magnam quia, quo laudantium ratione ut debitis?
+                  </p>
+                </div>
+                <div class="button-cart">
+                  <div class="button-price">
+                    <span>$10</span>
+                  </div>
+
+                  <div class="button-link">
+                    <a href="#">add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="slider-item">
+                <div class="slider-status">
+                  <span class="status">New</span>
+                </div>
+                <div class="slider-img">
+                  <img src="images/pd-2.png" alt="" />
+                </div>
+
+                <div class="slider-info">
+                  <p>Organic</p>
+                  <h3><a href="#">Fresh Fruit and vegetable for month</a></h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Magnam quia, quo laudantium ratione ut debitis?
+                  </p>
+                </div>
+                <div class="button-cart">
+                  <div class="button-price">
+                    <span>$10</span>
+                  </div>
+
+                  <div class="button-link">
+                    <a href="#">add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="slider-item">
+                <div class="slider-status">
+                  <span class="status">New</span>
+                </div>
+                <div class="slider-img">
+                  <img src="images/pd-2.png" alt="" />
+                </div>
+
+                <div class="slider-info">
+                  <p>Organic</p>
+                  <h3><a href="#">Fresh Fruit and vegetable for month</a></h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Magnam quia, quo laudantium ratione ut debitis?
+                  </p>
+                </div>
+                <div class="button-cart">
+                  <div class="button-price">
+                    <span>$10</span>
+                  </div>
+
+                  <div class="button-link">
+                    <a href="#">add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="slider-item">
+                <div class="slider-status">
+                  <span class="status">New</span>
+                </div>
+                <div class="slider-img">
+                  <img src="images/pd-1.png" alt="" />
+                </div>
+
+                <div class="slider-info">
+                  <p>Organic</p>
+                  <h3><a href="#">Fresh Fruit and vegetable for month</a></h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Magnam quia, quo laudantium ratione ut debitis?
+                  </p>
+                </div>
+                <div class="button-cart">
+                  <div class="button-price">
+                    <span>$10</span>
+                  </div>
+
+                  <div class="button-link">
+                    <a href="#">add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="slider-item">
+                <div class="slider-status">
+                  <span class="status">New</span>
+                </div>
+                <div class="slider-img">
+                  <img src="images/pd-1.png" alt="" />
+                </div>
+
+                <div class="slider-info">
+                  <p>Organic</p>
+                  <h3><a href="#">Fresh Fruit and vegetable for month</a></h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Magnam quia, quo laudantium ratione ut debitis?
+                  </p>
+                </div>
+                <div class="button-cart">
+                  <div class="button-price">
+                    <span>$10</span>
+                  </div>
+
+                  <div class="button-link">
+                    <a href="#">add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //today product -->
+
+    <section class="card-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-6">
+            <div class="card-image">
+              <img src="images/orange.png" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="card-image orange">
+              <span class="span-orange"></span>
+              <p>California</p>
+              <h3>Fresh fruit</h3>
+              <p>association</p>
+              <h3 class="text-spacing">Sale 50% off</h3>
+
+              <div class="button">
+                <a href="#"> Shop now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="card-image">
+              <img src="images/pinky.png" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <div class="card-image pinky">
+              <span class="span-pinky"></span>
+              <h4>Summer Fruit</h4>
+              <h3>100% pure</h3>
+              <h3>natural</h3>
+              <h3>fruit juice</h3>
+
+              <div class="button">
+                <a href="#"> Shop now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product section -->
+
+    <section class="products">
+      <div class="container">
+        <div class="row">
+          <div class="title-header title-section text-center">
+            <img src="images/organic.png" alt="" />
+            <h3>all the best item for you</h3>
+            <h2>our products</h2>
+          </div>
+        </div>
+        <nav>
+          <div
+            class="nav nav-tabs justify-content-center"
+            id="nav-tab"
+            role="tablist"
+          >
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              featured
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Top Rated
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              BestSeller
+            </button>
+
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              On Sales
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="slider-status">
+                      <span class="status green">New</span>
+                    </div>
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+
+                      <div class="product-info-hide">
+                        <a href="#"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+
+                        <button class="btn-product">add to cart</button>
+
+                        <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center product-list-2">
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="slider-status">
+                      <span class="status green">New</span>
+                    </div>
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+
+                      <div class="product-info-hide">
+                        <a href="#"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+
+                        <button class="btn-product">add to cart</button>
+
+                        <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center product-list-2">
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="product-item">
+                    <div class="product-image">
+                      <img src="images/pd-1.png" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                      <p>Fresh Fruit</p>
+                      <a href="#">National Fresh Fruit</a>
+                      <div class="product-price">
+                        <span>$69.00</span>
+                        <span>100$</span>
+                      </div>
+                    </div>
+
+                    <div class="product-info-hide">
+                      <a href="#"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></a>
+
+                      <button class="btn-product">add to cart</button>
+
+                      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            <div class="container">
+              <!-- product-list here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="title-section text-center">
+            <h2>we crow best food</h2>
+            <h3>
+              natural food is taken from the world's most modern farm with
+              strict safety cycles
+            </h3>
+          </div>
+        </div>
+        <div class="row justify-content-between mt-5">
+          <div class="col-md-12 col-xs-12 col-lg-3 mt-5">
+            <div class="about-item">
+              <div class="about-image mt-3">
+                <img src="images/about-1.png" alt="" />
+              </div>
+
+              <div class="about-content">
+                <h1 style="color: #7faf51">01</h1>
+                <h2>always fresh</h2>
+                <p>
+                  natural products are kept in the best condition to ensure
+                  always fresh
+                </p>
+              </div>
+            </div>
+
+            <div class="about-item">
+              <div class="about-image mt-3">
+                <img src="images/about-2.png" alt="" />
+              </div>
+
+              <div class="about-content">
+                <h1 style="color: #ff4f63">02</h1>
+                <h2>overall heathy</h2>
+                <p>
+                  natural products are kept in the best condition to ensure
+                  always fresh
+                </p>
+              </div>
+            </div>
+
+            <div class="about-item">
+              <div class="about-image mt-3">
+                <img src="images/about-3.png" alt="" />
+              </div>
+
+              <div class="about-content">
+                <h1 style="color: #3b7f17">03</h1>
+                <h2>encironmental safety</h2>
+                <p>
+                  natural products are kept in the best condition to ensure
+                  always fresh
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-6">
+            <div class="about-center">
+              <img src="images/about-center.png" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-12 col-xs-12 col-lg-3 mt-5">
+            <div class="about-item flex-row-reverse">
+              <div class="about-image mt-3">
+                <img src="images/about-4.png" alt="" />
+              </div>
+
+              <div class="about-content right-align">
+                <h1 style="color: #cec316">04</h1>
+                <h2>antioxident capacity</h2>
+                <p>
+                  natural products are kept in the best condition to ensure
+                  always fresh
+                </p>
+              </div>
+            </div>
+
+            <div class="about-item flex-row-reverse">
+              <div class="about-image mt-3">
+                <img src="images/about-5.png" alt="" />
+              </div>
+
+              <div class="about-content right-align">
+                <h1 style="color: #ffbc53">05</h1>
+                <h2>good for arteries</h2>
+                <p>
+                  natural products are kept in the best condition to ensure
+                  always fresh
+                </p>
+              </div>
+            </div>
+
+            <div class="about-item flex-row-reverse">
+              <div class="about-image mt-3">
+                <img src="images/about-6.png" alt="" />
+              </div>
+
+              <div class="about-content right-align">
+                <h1 style="color: #51142e">06</h1>
+                <h2>quality standards</h2>
+                <p>
+                  natural products are kept in the best condition to ensure
+                  always fresh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <div class="row">
+          <div class="title-header title-section text-center">
+            <img src="images/organic.png" alt="" />
+            <h3>quick access to our products</h3>
+            <h2>Shop by categories</h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-xs-12 mb-4">
+            <div class="categories-img">
+              <a href="#">
+                <span class="categories-text">Fresh fruit</span>
+                <img src="images/product-1.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <div class="row">
+              <div class="col-6">
+                <div class="categories-img">
+                  <span class="categories-text">Dried Fruits</span>
+                  <a href="#"><img src="images/product-2.png" alt="" /></a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="categories-img">
+                  <span class="categories-text">Drink fruits</span>
+                  <a href="#"><img src="images/product-3.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 2.5rem">
+              <div class="col">
+                <div class="categories-img">
+                  <span class="categories-text categories-text-left">
+                    vegetables
+                  </span>
+                  <img src="images/product-4.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs-product">
+      <div class="container">
+        <div class="row">
+          <div class="title-header title-section text-center">
+            <img src="images/organic.png" alt="" />
+            <h3>all the best item for you</h3>
+            <h2>Dried fruits</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="tabs-header">
+              <div class="tabs-title"><span>Domestic Goods</span></div>
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-small-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tabs-small"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-small"
+                    aria-selected="true"
+                  >
+                    SMALL
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-medium-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-medium"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-medium"
+                    aria-selected="false"
+                  >
+                    MEDIUM
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-large-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-large"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-large"
+                    aria-selected="false"
+                  >
+                    LARGE
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="tabs-small"
+                role="tabpanel"
+                aria-labelledby="pills-small-tab"
+              >
+                <div class="row my-3">
+                  <div class="col-md-6">
+                    <div class="tabs-info">
+                      <img src="images/1.png" alt="" />
+                      <div class="tabs-name">
+                        <p>Dried fruit</p>
+                        <h4><a href="#"> Varius dried fruit in bowl </a></h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="tabs-price">
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row my-3">
+                  <div class="col-md-6">
+                    <div class="tabs-info">
+                      <img src="images/2.png" alt="" />
+                      <div class="tabs-name">
+                        <p>Dried fruit</p>
+                        <h4><a href="#"> Varius dried fruit in bowl </a></h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="tabs-price">
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row my-3">
+                  <div class="col-md-6">
+                    <div class="tabs-info">
+                      <img src="images/3.png" alt="" />
+                      <div class="tabs-name">
+                        <p>Dried fruit</p>
+                        <h4><a href="#"> Varius dried fruit in bowl </a></h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="tabs-price">
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-medium"
+                role="tabpanel"
+                aria-labelledby="pills-medium-tab"
+              >
+                medium
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-large"
+                role="tabpanel"
+                aria-labelledby="pills-large-tab"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="tabs-header">
+              <div class="tabs-title"><span>Fresh canned Fruits</span></div>
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Home
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Profile
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <div class="row my-3">
+                  <div class="col-md-6">
+                    <div class="tabs-info">
+                      <img src="images/4.png" alt="" />
+                      <div class="tabs-name">
+                        <p>Dried fruit</p>
+                        <h4><a href="#"> Varius dried fruit in bowl </a></h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="tabs-price">
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row my-3">
+                  <div class="col-md-6">
+                    <div class="tabs-info">
+                      <img src="images/5.png" alt="" />
+                      <div class="tabs-name">
+                        <p>Dried fruit</p>
+                        <h4><a href="#"> Varius dried fruit in bowl </a></h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="tabs-price">
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row my-3">
+                  <div class="col-md-6">
+                    <div class="tabs-info">
+                      <img src="images/pd-1.png" alt="" />
+                      <div class="tabs-name">
+                        <p>Dried fruit</p>
+                        <h4><a href="#"> Varius dried fruit in bowl </a></h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="tabs-price">
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                      <h4>10$</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs">
+      <div class="container">
+        <div class="row">
+          <div class="title-header title-section text-center">
+            <h3>the freshest and most exciting news</h3>
+            <h2>from the blog</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-xs-12">
+            <div class="card">
+              <img src="images/blog-1.png" class="card-img-top" alt="..." />
+              <div class="card-contact d-flex justify-content-end">
+                <span>2</span>
+                <a href="#">
+                  <i class="fa-regular fa-comment"></i>
+                </a>
+
+                <span>6</span>
+                <a href="#"> <i class="fa-regular fa-heart"></i></a>
+
+                <a href="#"><i class="fa-sharp fa-solid fa-share-nodes"></i></a>
+              </div>
+              <div class="card-date">
+                <span>26</span>
+                <span>DEC</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#"
+                    >Ashwaganha:the #1 herd in the world for Anxiety</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#">continue reading</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="card">
+              <div class="card-date">
+                <span>26</span>
+                <span>DEC</span>
+              </div>
+              <img src="images/blog-2.png" class="card-img-top" alt="..." />
+              <div class="card-contact d-flex justify-content-end">
+                <span>2</span>
+                <a href="#">
+                  <i class="fa-regular fa-comment"></i>
+                </a>
+
+                <span>6</span>
+                <a href="#"> <i class="fa-regular fa-heart"></i></a>
+
+                <a href="#"><i class="fa-sharp fa-solid fa-share-nodes"></i></a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#"
+                    >Ashwaganha:the #1 herd in the world for Anxiety</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#">continue reading</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="card">
+              <img src="images/blog-3.png" class="card-img-top" alt="..." />
+              <div class="card-contact d-flex justify-content-end">
+                <span>2</span>
+                <a href="#">
+                  <i class="fa-regular fa-comment"></i>
+                </a>
+
+                <span>6</span>
+                <a href="#"> <i class="fa-regular fa-heart"></i></a>
+
+                <a href="#"><i class="fa-sharp fa-solid fa-share-nodes"></i></a>
+              </div>
+              <div class="card-date">
+                <span>26</span>
+                <span>DEC</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#"
+                    >Ashwaganha:the #1 herd in the world for Anxiety</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+                <a href="#">continue reading</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="container">
+        <div class="row">
+          <div class="brand-wrapper">
+            <div class="col-md-3">
+              <div class="brand-image">
+                <img src="images/brand-1.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="brand-image">
+                <img src="images/brand-2.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="brand-image">
+                <img src="images/brand-3.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="brand-image">
+                <img src="images/brand-5.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="brand-image">
+                <img src="images/brand-1.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="brand-image">
+                <img src="images/brand-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-4">
+            <div class="logo">
+              <img src="images/logo-footer.png" alt="" />
+              rganic
+            </div>
+            <div class="question">
+              <img src="images/questions.png" alt="question" />
+              <div class="question-content">
+                <p>Got Question ?</p>
+                <p>(700) 9001-1909(900)689-66</p>
+              </div>
+            </div>
+            <div class="contact-info">
+              <img src="images/map.png" alt="map" />
+              <div class="contact-content">
+                <p>Contact info</p>
+                <p>
+                  floor 4 /147 mai dich Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Eligendi ipsam enim quo eius modi, adipisci
+                </p>
+                <p>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="row d-flex justify-content-between align-center mt-5">
+              <div class="col-6">
+                <div class="infomation-account">
+                  <div class="footer-title">my account</div>
+                  <ul class="account">
+                    <li class="infomation-item">
+                      <a href="#">sign in</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">view cart</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">my wishlist</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">track my odrer</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">help</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">my blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="infomation-ad">
+                  <div class="footer-title">why buy from us</div>
+                  <ul class="account">
+                    <li class="infomation-item">
+                      <a href="#">shiping and return </a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">secure shoping</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">international shipping</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">sign in</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">groupsale</a>
+                    </li>
+
+                    <li class="infomation-item">
+                      <a href="#">shipping and return </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mt-5">
+            <div class="row">
+              <div class="footer-title">recent post</div>
+              <div class="post">
+                <div class="post-item">
+                  <img src="images/post-1.png" alt="" />
+
+                  <div class="post-content">
+                    <div class="post-title">
+                      <a href="3"
+                        >Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Aut, aspernatur.</a
+                      >
+                    </div>
+                    <div class="post-info">
+                      <span>dec 26,2022</span>
+                      <span>2 comments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post">
+                <div class="post-item">
+                  <img src="images/footer-2.png" alt="" />
+
+                  <div class="post-content">
+                    <div class="post-title">
+                      <a href="#"
+                        >Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Aut, aspernatur.</a
+                      >
+                    </div>
+                    <div class="post-info">
+                      <span>dec 26,2022</span>
+                      <span>2 comments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="copyright">
+            <p>copyright by organic template 2018 - Themeforest</p>
+
+            <div class="bank">
+              <img src="images/card-1.png" alt="" />
+              <img src="images/card-2.png" alt="" />
+              <img src="images/card-3.png" alt="" />
+              <img src="images/card-4.png" alt="" />
+              <img src="images/card-5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="bootstrap5/js/bootstrap.js"></script>
+  </body>
+</html>
